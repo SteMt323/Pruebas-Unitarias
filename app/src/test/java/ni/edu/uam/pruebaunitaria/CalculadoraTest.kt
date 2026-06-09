@@ -13,4 +13,33 @@ class CalculadoraTest {
 
         assertEquals(8, resultado)
     }
+
+    @Test
+    fun verificarResta() {
+        val calculadora = Calculadora()
+        val resultado = calculadora.restar(5, 3)
+        assertEquals(2, resultado)
+    }
+
+    @Test
+    fun verificarMultiplicacion() {
+        val calculadora = Calculadora()
+        val resultado = calculadora.multiplicar(5, 3)
+        assertEquals(15, resultado)
+    }
+
+    @Test
+    fun verificarDivision() {
+        val calculadora = Calculadora()
+        val resultado = calculadora.dividir(6, 3)
+        assertEquals(2, resultado)
+    }
+
+    @Test
+    fun testFalla(){
+        val calculadora = Calculadora()
+        val resultado = calculadora.sumar(6, 3)
+        assertEquals(2, resultado)
+    }
+
 }
